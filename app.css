@@ -1,0 +1,176 @@
+body
+{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.attribution
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 15px;
+}
+
+.nft-card
+{
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.overlay{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 50%;
+  width: 50%;
+  max-width: 400px;
+  max-height: 400px;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: hsl(178, 100%, 50%);
+}
+.overlay:hover
+{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.overlay img
+{
+ opacity: 1;
+}
+
+.nft-image-showcase
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    flex-shrink: 6;
+}
+
+.nft-image-showcase img
+{
+    display: block;
+    border-radius: 10px;
+    max-width: 400px;
+    max-height: 600px;
+}
+
+img:hover {
+  background-color: cyan;
+  opacity: 1;
+  
+}
+
+.nft-info
+{
+    font-family: 'Outfit', sans-serif;
+}
+
+.nft-info h2
+{
+    color: white;
+    text-align: left;
+    padding-left: 25px;
+    font-weight: 600;
+}
+
+.nft-info p
+{
+    color: #a2b3bb;
+    text-align: left;
+    padding-left: 25px;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.nft-title
+{
+  transition: color 0.25s ease-in-out;
+}
+
+.nft-title:hover
+{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.nft-details
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+h3
+{
+    color: #a2b3bb;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.nft-price
+{
+    text-align: left;
+    padding-left: 25px;
+}
+  
+.nft-time
+{
+    text-align: right;
+    padding-right: 25px;
+}
+
+.profile
+{
+    margin-left: 25px;
+    margin-right:25px;
+    border-top: 1px solid #565c5f;
+}
+
+.name
+{
+  color: white;
+  transition: color 0.25s ease-in-out;
+}
+
+.name:hover
+{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.profile img
+{
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+    max-width: 30px;
+    vertical-align:middle;
+}
+
+@media screen and (max-width: 768px) {
+    .nft-card {
+      max-width: 100%;
+    }
+  
+    .nft-image-showcase img {
+      max-width: 100%;
+      max-height: none;
+    }
+  
+
+  }
+
